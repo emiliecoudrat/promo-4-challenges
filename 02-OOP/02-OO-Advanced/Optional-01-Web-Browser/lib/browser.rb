@@ -4,7 +4,7 @@ require 'open-uri'
 class Browser
   def fetch_content(url)
     doc = Nokogiri::HTML(open(url))
-    p doc.document
+    p doc.content
   end
   # print text back
 end
