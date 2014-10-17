@@ -30,8 +30,6 @@ class Cookbook
 end
 
 
-# filename = "/Users/emiliecoudrat/code/emiliecoudrat/promo-4-challenges/02-OOP/03-Cookbook/01-Cookbook-v0/lib/recipes.csv"
-
 # mon_carnet = Cookbook.new(filename)
 
 # mon_carnet.recipes.each do |recipe|
