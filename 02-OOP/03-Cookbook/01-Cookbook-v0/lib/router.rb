@@ -25,20 +25,26 @@ class Router
 
   def route_action(action)
     case action
-    when 1 then @controller.list
-    when 2 then @controller.create
-    when 3 then @controller.destroy
-    when 4 then stop
-    else puts "Please press 1, 2, 3 or 4"
+    when 1 then @controller.web_import
+    when 2 then @controller.list
+    when 3 then @controller.print_details
+    when 4 then @controller.mark_recipe_as_tested
+    when 5 then @controller.create
+    when 6 then @controller.destroy
+    when 7 then stop
+    else puts "Please press 1, 2, 3, 4 or 5"
     end
   end
 
   def display_tasks
     puts ""
     puts "What do you want to do next?"
-    puts "1 - List all recipes"
-    puts "2 - Create a new recipe"
-    puts "3 - Destroy a recipe"
-    puts "4 - Stop and exit the program"
+    puts "1 - Import recipes from marmiton"
+    puts "2 - List all recipes"
+    puts "3 - See a recipe details"
+    puts "4 - Mark a recipe"
+    puts "5 - Create a new recipe"
+    puts "6 - Destroy a recipe"
+    puts "7 - Stop and exit the program"
   end
 end

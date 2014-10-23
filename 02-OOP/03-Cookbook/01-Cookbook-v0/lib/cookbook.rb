@@ -7,7 +7,7 @@ class Cookbook
   def initialize(csv_file)
     @csv_file = csv_file
     @recipes = []
-    CSV.foreach(csv_file) { |row| @recipes << Recipe.new(row[0], row[1]) }
+    CSV.foreach(csv_file) { |row| @recipes << Recipe.new(row[0], row[1], row[2]) }
   end
 
   def add_recipe(recipe)
@@ -16,7 +16,7 @@ class Cookbook
     csv_options = { col_sep: ',' }
 
     CSV.open(@csv_file, 'a', csv_options) do |csv|
-      csv << [recipe.name, recipe.description]
+      csv << [recipe.name, recipe.description, recipe.rating]
     end
   end
 
@@ -24,9 +24,14 @@ class Cookbook
     @recipes.delete_at(recipe_id)
 
     CSV.open(@csv_file, 'wb') do |csv|
-      @recipes.each { |recipe| csv << [recipe.name, recipe.description] }
+      @recipes.each { |recipe| csv << [recipe.name, recipe.description, recipe.rating] }
     end
   end
+
+  def fetch_recipe(index)
+    @recipes[index]
+  end
+
 end
 
 
