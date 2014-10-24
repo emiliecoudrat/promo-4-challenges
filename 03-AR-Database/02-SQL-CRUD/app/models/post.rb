@@ -11,8 +11,8 @@ class Post
     @id = options[:id]
     @title = options[:title]
     @url = options[:url]
-    @date = Time.now
-    @votes = 0 || options[:votes]
+    @date = options[:date] || Time.now
+    @votes = options[:votes] || 0
   end
 
   def upvote
@@ -45,14 +45,17 @@ class Post
       nil
     else
       Post.new(id: post_infos[0], title: post_infos[1],
-        url: post_infos[2], date: Time.at(post_infos[3]), vote: post_infos[4])
+      url: post_infos[2], date: Time.at(post_infos[3]), votes: post_infos[4])
     end
   end
 
   def self.all
-    post_infos = DB.execute("SELECT * FROM posts;")
-    Post.new(id: post_infos[0], title: post_infos[1],
-      url: post_infos[2], date: Time.at(post_infos[3]), vote: post_infos[4])
+    posts = DB.execute("SELECT * FROM posts ;")
+    posts_loaded = posts.map do |post|
+      Post.new(id: post[0], title: post[1], url: post[2],
+        date: Time.at(post[3]), votes: post[4])
+    end
+    return posts_loaded
   end
   # TODO: implement all the class methods and instance methods
   #       to have a full CRUD support on your Post model
