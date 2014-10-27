@@ -39,8 +39,6 @@ class Post
   def self.find(id)
     post_infos = DB.execute("SELECT * FROM posts WHERE id = #{id} ;")[0]
     # renvoie un tableau de tableau donc je ne prend que le premier element
-    # new_post = Post.new()
-    # new_post.find
     if post_infos.nil?
       nil
     else
