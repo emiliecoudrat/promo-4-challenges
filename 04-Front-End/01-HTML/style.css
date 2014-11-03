@@ -1,0 +1,60 @@
+* {
+  font-family: courier;
+  font-size: 14px;
+  color: #292929;
+  background-color: #FAD62F;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 16px
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.vertical-spacer{
+  height: 4em;
+}
+
+#title {
+  text-align: center;
+}
+
+#navbar {
+  text-align: center;
+}
+
+#navbar li {
+  display : inline;
+}
+
+#navbar li a {
+  font-size: 16px;
+}
+
+#header {
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer li {
+  display: inline;
+}
+
+#footer li a {
+  font-size: 14px;
+}
+
+#footer li a:hover {
+  text-decoration: none;
+}
+

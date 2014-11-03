@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>weQueue. Queue less, live more.</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="mynav"role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><i class="fa fa-home maison"></i> home</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="contact.html" class="typo_nav"><i class="fa fa-users"></i>  q-team</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="text-center banner text-center">
+      <h1>weQueue</h1>
+      <p>Queue less, live more.</p>
+     <!--  <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#signup">Sign-up now !</a> -->
+
+      <form class="form-inline" role="form">
+        <div id="form-display">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <input type="email" class="form-control list-inline" id="exampleInputEmail2" placeholder="Enter email">
+          </div>
+        <button type="submit" class="btn btn-default list-inline" id="monbouton">Sign now !</button>
+        </div>
+      </form>
+
+    </div>
+
+
+    <div class="light-grey-bg">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <h2>Connecter</h2>
+              <img src="img/hands.png" width="100">
+              <p>mettre en relation des personnes prêtes à payer quelqu’un pour faire la queue à leur place et des personnes prêtes à être payées pour faire la queue.</p>
+            </div>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+
+
+            <div class="feature">
+              <h2>Informer</h2>
+              <img src="img/localization.png" width="100">
+              <p>des infos précises sur les files d’attente en live et dans le monde entier grâce à une communauté de queuers qui se géolocalisent et informent du temps d’attente.</p>
+            </div>
+
+
+          </div>
+
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+
+
+            <div class="feature">
+              <h2>Anticiper</h2>
+              <img src="img/agenda.png" width="100">
+              <p>l’anticipation des événements à fort potentiel queue avec la possibilité de poster une demande de queuers pour un événement à venir</p>
+            </div>
+
+
+          </div>
+
+
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <h2>S'amuser</h2>
+              <img src="img/smiley.png" width="100">
+              <p>des contenus (jeux/playlist…), un chat réservé aux queuers, des pushs sur les queues (la plus proche/ la plus loin de vous/ la plus populaire/ la plus grosse…) pour animer les queuers en situation d’attente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <ul class="list-inline text-center">
+        <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Sign up</h4>
+          </div>
+          <div class="modal-body">
+
+            <form action="/">
+              <div class="form-group">
+                <label for="my-email">Enter your email</label>
+                <input type="email" name="email" id="my-email" class="form-control" placeholder="john.doe@gmail.com">
+              </div>
+
+              <div class="form-group">
+                <label for="password">Enter your password</label>
+                <input type="password" name="password" id="password" class="form-control">
+              </div>
+
+              <input type="submit" value="Sign Up" class="btn btn-primary">
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

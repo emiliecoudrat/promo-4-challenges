@@ -1,0 +1,7 @@
+<h1><%= @post.name %></h1>
+
+
+<a href="/post/<%= @post.id %>/voteup">Vote up</a>
+<%= @post.votes %>
+&nbsp; - &nbsp;
+<a href="<% @post.url %>">Click here</a>

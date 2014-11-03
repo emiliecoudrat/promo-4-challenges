@@ -1,0 +1,57 @@
+<!-- You must use form tags.
+You must use checkboxes, selects, inputs and textareas.
+You must use an input type date. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CONTACT</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div id="titre-contact">
+        <h1>CONTACT</h1>
+        <img src ="img/et.jpg" alt="E.T" width = "200px">
+      </div>
+
+      <form action = "#">
+
+        <label for="user_email">Pour recevoir les dernières infos des aficionadas</label>
+        <input type="email" id="user_email" name="email" placeholder="nom@gmail.com">
+
+        <div class="vertical-spacer"></div>
+
+        <label for="birthday">Pour recevoir une super surprise le jour de ton anniversaire</label>
+        <input type="date" id="birthday" name="anniversaire">
+
+        <div class="vertical-spacer"></div>
+
+        <label for="avis">Donnez-nous votre <strong>avis</strong> !</label>
+        <select name="avis" id="avis">
+          <option>Ce site est top</option>
+          <option>Ce site n'est pas bien</option>
+          <option>Peut mieux faire</option>
+        </select>
+
+        <div class="vertical-spacer"></div>
+
+        <input type="checkbox" name="spam_agreement" id="agreement">
+        <label for="agreement">J'accepte de recevoir des <strong>nouvelles</strong> tout le temps.</label>
+
+        <div class="vertical-spacer"></div>
+
+        <label for="comment">A vos commentaires!</label>
+        <input type="textarea" name="comment" id="comment">
+
+        <input type="submit" value="Ok">
+      </form>
+      <p><a href="index.html">Revenir à l'accueil</a></p>
+    </div>
+
+  </body>
+</html>

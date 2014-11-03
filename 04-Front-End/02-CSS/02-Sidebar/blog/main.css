@@ -3,3 +3,42 @@
   width: 840px;
 	font-family: 'Open Sans', sans-serif;
 }
+
+header {
+  border-bottom: solid black 1px;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  padding-top: 15px;
+ /* display: block;*/
+}
+
+nav ul {
+  padding : 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+.content {
+  border-left: solid black 1px;
+  width : 70%;
+  float: right;
+}
+
+section {
+ padding : 15px;
+ /*display: block;*/
+}
+
+
+footer {
+  clear : both;
+  margin : auto;
+  border-top: solid black 1px;
+  margin : 10px;
+  padding : 20px;
+}
